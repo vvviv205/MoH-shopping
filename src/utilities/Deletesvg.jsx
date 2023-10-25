@@ -10,7 +10,8 @@ export default function Deletesvg({ id }) {
       className="w-8 cursor-pointer"
       onClick={() => {
         setOrder((ord) => ord.filter((e) => e.id !== id));
-        navigate("/")
+        navigate("/") ;
+        alert("The order deleted successfully")
       }}
       viewBox="-3.84 -3.84 31.68 31.68"
       fill="none"
