@@ -1,14 +1,16 @@
 import React from "react";
 import { useOrder } from "../services/useOrder";
+import { useNavigate } from "react-router-dom";
 
 export default function Deletesvg({ id }) {
   const { setOrder } = useOrder();
+  const navigate = useNavigate();
   return (
     <svg
       className="w-8 cursor-pointer"
       onClick={() => {
         setOrder((ord) => ord.filter((e) => e.id !== id));
-        location.reload();
+        navigate("/")
       }}
       viewBox="-3.84 -3.84 31.68 31.68"
       fill="none"
