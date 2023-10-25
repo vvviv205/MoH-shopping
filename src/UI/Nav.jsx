@@ -16,7 +16,7 @@ export default function Nav() {
             MoH
           </NavLink>
         </div>
-        <div className=" flex gap-2 sm:gap-4 items-end">
+        <div className=" flex gap-4 sm:gap-6 items-end">
           <NavLink
             to="/menu"
             className="text-lg font-medium text-gray-300 hover:text-gray-400"
